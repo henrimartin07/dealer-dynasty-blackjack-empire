@@ -24,6 +24,19 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				// Casino Theme Colors
+				'casino-felt': 'hsl(var(--casino-felt))',
+				'casino-felt-light': 'hsl(var(--casino-felt-light))',
+				'gold': 'hsl(var(--gold))',
+				'gold-light': 'hsl(var(--gold-light))',
+				'gold-dark': 'hsl(var(--gold-dark))',
+				'card-bg': 'hsl(var(--card-background))',
+				'card-shadow': 'hsl(var(--card-shadow))',
+				'chip-red': 'hsl(var(--chip-red))',
+				'chip-blue': 'hsl(var(--chip-blue))',
+				'chip-green': 'hsl(var(--chip-green))',
+				'chip-black': 'hsl(var(--chip-black))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +97,45 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'deal-card': {
+					'0%': {
+						transform: 'translateY(-100px) rotate(180deg)',
+						opacity: '0'
+					},
+					'50%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(0) rotate(0deg)',
+						opacity: '1'
+					}
+				},
+				'chip-stack': {
+					'0%': {
+						transform: 'scale(0.8) rotate(-5deg)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1) rotate(0deg)',
+						opacity: '1'
+					}
+				},
+				'gold-shimmer': {
+					'0%': {
+						backgroundPosition: '-200% center'
+					},
+					'100%': {
+						backgroundPosition: '200% center'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'deal-card': 'deal-card 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+				'chip-stack': 'chip-stack 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+				'gold-shimmer': 'gold-shimmer 2s linear infinite'
 			}
 		}
 	},

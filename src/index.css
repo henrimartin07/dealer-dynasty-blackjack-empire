@@ -2,14 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Casino Blackjack Tycoon Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Casino Theme Colors */
+    --background: 150 100% 3%;
+    --foreground: 48 100% 85%;
+    
+    /* Casino Green Felt */
+    --casino-felt: 150 80% 8%;
+    --casino-felt-light: 150 60% 12%;
+    
+    /* Gold Accents */
+    --gold: 48 100% 50%;
+    --gold-light: 48 100% 65%;
+    --gold-dark: 48 100% 35%;
+    
+    /* Card Colors */
+    --card-background: 0 0% 98%;
+    --card-shadow: 0 0% 0%;
+    
+    /* Chip Colors */
+    --chip-red: 0 75% 50%;
+    --chip-blue: 220 75% 50%;
+    --chip-green: 120 75% 40%;
+    --chip-black: 0 0% 15%;
+    
+    /* Casino Gradients */
+    --gradient-felt: linear-gradient(135deg, hsl(var(--casino-felt)), hsl(var(--casino-felt-light)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-dark)), hsl(var(--gold-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card-background)), hsl(0 0% 92%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(var(--card-shadow) / 0.3);
+    --shadow-chip: 0 2px 10px hsl(var(--card-shadow) / 0.4);
+    --shadow-glow: 0 0 30px hsl(var(--gold) / 0.5);
+    
+    /* Animations */
+    --transition-card: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
