@@ -1,7 +1,7 @@
-import { BlackjackGame } from '@/components/BlackjackGame';
+import { TableLobby } from '@/components/TableLobby';
 
 const Index = () => {
-  return <BlackjackGame />;
+  return <TableLobby />;
 };
 
 export default Index;
